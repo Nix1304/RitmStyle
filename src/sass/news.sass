@@ -1,0 +1,52 @@
+.services
+    display: flex
+
+.column
+  width: 416px
+  display: flex
+  flex-direction: column
+
+  &:not(:last-child)
+    margin-right: 20px
+
+.card
+  display: flex
+  position: relative
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  background: url('../images/water.png')
+  width: 416px
+  height: 258px
+
+  &:first-child
+    margin-bottom: 24px
+
+  &:hover::after
+    opacity: 100%
+    transition: 500ms opacity
+
+  &::after
+    opacity: 0
+    display: block
+    position: absolute
+    bottom: 0
+    content: ''
+    height: 7px
+    width: 100%
+    background-color: #018abe
+    border-radius: 0 0 7px 7px
+
+  .text
+    position: absolute
+    font-family: 'El Messiri', sans-serif
+    font-weight: 700
+    font-size: 24px
+    line-height: 140%
+    bottom: 60px
+    left: 40px
+
+  .date
+    position: absolute
+    top: 30px
+    left: 35px

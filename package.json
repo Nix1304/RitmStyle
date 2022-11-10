@@ -1,0 +1,25 @@
+{
+  "name": "ritmstyle",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "4.0.2",
+    "gulp-clean-css": "4.3.0",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-sass": "5.1.0",
+    "node-sass": "7.0.3",
+    "browser-sync": "2.27.10"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-preset-es2015": "6.24.1"
+  },
+  "scripts": {
+    "watch": "gulp watch"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
